@@ -1,0 +1,165 @@
+.ai-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f9f9fb;
+}
+
+/* نستعمل نفس .home-sidebar من قبل */
+.home-sidebar {
+  width: 240px;
+  background: #1e293b;
+  color: #fff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* ===== Main Content ===== */
+.ai-page {
+  flex: 1;
+  padding: 30px;
+}
+
+.ai-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ai-title {
+  margin-bottom: 20px;
+  color: #1e293b;
+}
+
+.ai-topic-input {
+  width: 50%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  margin-bottom: 20px;
+}
+
+
+.ai-generate-btn {
+  margin-left: 10px;
+  background: #2563eb;
+  color: #fff;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.ai-generate-btn:hover {
+  background: #1d4ed8;
+}
+
+.ai-result-box {
+  background: #f1f5f9;
+  padding: 15px;
+  border-radius: 6px;
+  min-height: 100px;
+  margin-bottom: 15px;
+  white-space: pre-line;
+}
+
+.ai-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.ai-actions button {
+  background: #38bdf8;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.ai-actions button:hover {
+  background: #0284c7;
+}
+
+/* مكان الشات والزرار */
+.chatbot-floating {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2000;
+}
+
+/* الزرار */
+.chatbot-toggle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background: #4cafef;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+
+.chatbot-toggle:hover {
+  transform: scale(1.1);
+}
+
+.chatbot-box {
+  width: 350px;
+  height: 500px;
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease-in-out;
+  z-index: 999;
+}
+
+.chatbot-box.maximized {
+  width: 90vw;
+  height: 90vh;
+  bottom: 5vh;
+  right: 5vw;
+}
+
+.chatbot-header {
+  background: #1e88e5;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chatbot-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.chatbot-header button {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.close-btn {
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+

@@ -7,6 +7,7 @@
     "start": "node server.js"
   },
   "dependencies": {
+    "@google-cloud/text-to-speech": "^6.3.0",
     "@langchain/community": "^0.3.56",
     "@langchain/core": "^0.3.77",
     "@langchain/groq": "^0.2.4",
@@ -16,12 +17,18 @@
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "dotenv": "^16.6.1",
+    "ejs": "^3.1.10",
     "express": "^5.1.0",
     "groq-sdk": "^0.32.0",
     "gtts": "^0.2.1",
+    "jsonwebtoken": "^9.0.2",
     "langchain": "^0.3.34",
-    "mongoose": "^8.18.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^8.18.2",
+    "multer-gridfs-storage": "^5.0.2",
     "openai": "^4.62.1",
+    "pdf-parse": "^1.1.1",
+    "pptxgenjs": "^4.0.1",
     "say": "^0.16.0"
   },
   "description": "",
